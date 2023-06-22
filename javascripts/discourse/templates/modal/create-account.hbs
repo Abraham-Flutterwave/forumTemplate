@@ -12,7 +12,12 @@
     </span>
     <div id="flutterwave-auth-header">
       <img id="flw-logo-auth" class="flutterwave-logo" src="https://flutterwave.com/images/logo/full.svg" alt="flutterwave-logo"/>
-      {{d-button action="showLogin" class="btn-primary sign-up-button" label="Already_have_an_account?_Login"}}
+      <DButton
+                @class="flw-header-btn"
+                @id="flw-create-account-header-btn"
+                @action={{route-action "showLogin"}}
+                @label="Already_have_an_account?_Login"
+      />
       <button id="flw-create-account-header-btn" class="flw-header-btn">
         <span>
           Already have an account? Login
