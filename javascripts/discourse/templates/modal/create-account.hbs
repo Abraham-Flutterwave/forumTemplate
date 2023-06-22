@@ -16,7 +16,7 @@
                 @class="flw-header-btn"
                 @id="flw-create-account-header-btn"
                 @action={{route-action "showLogin"}}
-                @label="Already_have_an_account?_Login"
+                @label={{html-safe (theme-setting "create_account_header_login_cta_text")}}
       />
 <!--       <button id="flw-create-account-header-btn" class="flw-header-btn">
         <span>
