@@ -148,13 +148,3 @@ svg_icons:
   default: ""
   description:
     en: "Add FontAwesome 5 icon classes for each icon used in the list and not already present in the Discourse instance."
-create_account_header_login_cta_text:
-  default: 'Already have an account? Login'
-  type: string
-  description:
-    en: "Button Text displayed on the create account modal.  use to navigate to the login modal"
-login_header_create_account_cta_text:
-  default: 'Create account'
-  type: string
-  description:
-    en: "Button Text displayed on the Login modal.  use to navigate to the create account modal"

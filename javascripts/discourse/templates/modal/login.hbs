@@ -11,7 +11,7 @@
                 @class="flw-header-btn"
                 @id="flw-create-account-header-btn"
                 @action={{route-action "showCreateAccount"}}
-                @label={{html-safe (theme-setting "login_header_create_account_cta_text")}}
+                @label={{i18n (theme-prefix "login.create_account_cta_text")}}
       />
 <!--     <button id="flw-login-header-btn" class="flw-header-btn">
       <span>
@@ -128,7 +128,7 @@
                 @id="login-button"
                 @form="login-form"
                 @icon="unlock"
-                @label={{this.loginButtonLabel}}
+                @label={{i18n (theme-prefix "login.cta_text")}}
                 @disabled={{this.loginDisabled}}
                 @class="btn btn-large btn-primary"
                 @tabindex="2"

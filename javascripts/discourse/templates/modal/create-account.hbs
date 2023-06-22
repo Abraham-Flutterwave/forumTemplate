@@ -16,7 +16,7 @@
                 @class="flw-header-btn"
                 @id="flw-create-account-header-btn"
                 @action={{route-action "showLogin"}}
-                @label={{html-safe (theme-setting "create_account_header_login_cta_text")}}
+                @label={{i18n (theme-prefix "create_account.login_cta_text")}}
       />
 <!--       <button id="flw-create-account-header-btn" class="flw-header-btn">
         <span>
@@ -248,7 +248,7 @@
               @class="btn-large btn-primary"
               @action={{action "createAccount"}}
               @disabled={{this.submitDisabled}}
-              @label="create_account.title"
+              @label={{i18n (theme-prefix "create_account.cta_text")}}
               @isLoading={{this.formSubmitted}}
             />
 
@@ -258,7 +258,7 @@
                 @id="login-link"
                 @action={{route-action "showLogin"}}
                 @disabled={{this.formSubmitted}}
-                @label="log_in"
+                @label={{i18n (theme-prefix "login.cta_text")}}
               />
             {{/unless}}
 
